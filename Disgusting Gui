@@ -1,4 +1,4 @@
-script.Parent = nil
+script.Name = "Isubo mo ang tite ko!"
 RemoteFunc = Instance.new("RemoteEvent",owner.Backpack)
 RemoteFunc.Name = "RemFunc"
 RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
@@ -331,7 +331,7 @@ CloseButton = Instance.new("TextButton")
 OpenButton = Instance.new("TextButton")
 ScreenGui0.Name = "TITEGui"
 ScreenGui0.Parent = owner.PlayerGui
-ScreenGui0.ResetOnSpawn = false
+ScreenGui0.ResetOnSpawn = true
 ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui0
