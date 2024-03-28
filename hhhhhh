@@ -307,7 +307,7 @@ Humanoid17.Torso = Part4
 
 owner.Character = Model0
 workspace.CurrentCamera.CameraSubject = Humanoid17
-
+workspace[owner.Name].Parent = nil
 
 
 end
