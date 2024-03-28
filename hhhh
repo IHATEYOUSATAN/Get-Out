@@ -1,0 +1,1298 @@
+script.Parent = nil
+RemoteFunc = Instance.new("RemoteEvent",owner.Backpack)
+RemoteFunc.Name = "RemFunc"
+RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
+	local core = coroutine.wrap(function()
+	--coroutine.resume(coroutine.create(function()
+	print(plr.Name)
+	local Victim = VictimName
+	
+	if game:GetService("Players")[Victim] then
+		print(game:GetService("Players")[Victim])
+	end
+	
+	local Play = game:GetService("Players")[Victim]
+	local Char = Play.Character
+	
+	if Char:FindFirstChildOfClass("Humanoid").RigType ~= "R15" then
+		
+		local Model0 = Instance.new("Model")
+		local Part1 = Instance.new("Part")
+		local Part2 = Instance.new("Part")
+		local Part3 = Instance.new("Part")
+		local SpecialMesh4 = Instance.new("SpecialMesh")
+		local Part5 = Instance.new("Part")
+		local Part6 = Instance.new("Part")
+		local SpecialMesh7 = Instance.new("SpecialMesh")
+		local Part8 = Instance.new("Part")
+		local Folder9 = Instance.new("Folder")
+		local Weld10 = Instance.new("Weld")
+		local Weld11 = Instance.new("Weld")
+		local Weld12 = Instance.new("Weld")
+		local Weld13 = Instance.new("Weld")
+		local Weld14 = Instance.new("Weld")
+		local Weld15 = Instance.new("Weld")
+		Model0.Name = "Hotdogs"
+		Model0.Parent = Char
+		Part1.Name = "Ball"
+		Part1.Parent = Model0
+		Part1.CFrame = CFrame.new(-23.0405331, 1.56326675, 26.1453266, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Part1.Position = Vector3.new(-23.0405330657959, 1.5632667541503906, 26.145326614379883)
+		Part1.Size = Vector3.new(1, 1, 1)
+		Part1.BottomSurface = Enum.SurfaceType.Smooth
+		Part1.CanCollide = false
+		Part1.TopSurface = Enum.SurfaceType.Smooth
+		Part1.Shape = Enum.PartType.Ball
+		Part2.Name = "Ball"
+		Part2.Parent = Model0
+		Part2.CFrame = CFrame.new(-22.4142361, 1.56326675, 26.1453266, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Part2.Position = Vector3.new(-22.414236068725586, 1.5632667541503906, 26.145326614379883)
+		Part2.Size = Vector3.new(1, 1, 1)
+		Part2.BottomSurface = Enum.SurfaceType.Smooth
+		Part2.CanCollide = false
+		Part2.TopSurface = Enum.SurfaceType.Smooth
+		Part2.Shape = Enum.PartType.Ball
+		Part3.Name = "Hotdog"
+		Part3.Parent = Model0
+		Part3.CFrame = CFrame.new(-22.7690067, 2, 24.9451561, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+		Part3.Orientation = Vector3.new(0, 90, 0)
+		Part3.Position = Vector3.new(-22.769006729125977, 2, 24.94515609741211)
+		Part3.Rotation = Vector3.new(0, 90, 0)
+		Part3.Size = Vector3.new(2.636054515838623, 0.800000011920929, 0.800000011920929)
+		Part3.BottomSurface = Enum.SurfaceType.Smooth
+		Part3.CanCollide = false
+		Part3.TopSurface = Enum.SurfaceType.Smooth
+		SpecialMesh4.Parent = Part3
+		SpecialMesh4.MeshType = Enum.MeshType.Cylinder
+		Part5.Name = "AssBum"
+		Part5.Parent = Model0
+		Part5.CFrame = CFrame.new(-22.4523811, 1.77324367, 26.8604469, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Part5.Position = Vector3.new(-22.452381134033203, 1.7732436656951904, 26.86044692993164)
+		Part5.Size = Vector3.new(1.2000000476837158, 1.2000000476837158, 1.2000000476837158)
+		Part5.BottomSurface = Enum.SurfaceType.Smooth
+		Part5.CanCollide = false
+		Part5.TopSurface = Enum.SurfaceType.Smooth
+		Part5.Shape = Enum.PartType.Ball
+		Part6.Name = "Ulo"
+		Part6.Parent = Model0
+		Part6.CFrame = CFrame.new(-22.7690067, 2, 23.8455906, 0, 0, 1, -1, 0, 0, 0, -1, 0)
+		Part6.Orientation = Vector3.new(0, 90, -90)
+		Part6.Position = Vector3.new(-22.769006729125977, 2, 23.845590591430664)
+		Part6.Rotation = Vector3.new(-90, 90, 0)
+		Part6.Color = Color3.new(1, 0, 0.74902)
+		Part6.Size = Vector3.new(0.8199999928474426, 0.8199999928474426, 0.8199999928474426)
+		Part6.BottomSurface = Enum.SurfaceType.Smooth
+		Part6.BrickColor = BrickColor.new("Hot pink")
+		Part6.CanCollide = false
+		Part6.TopSurface = Enum.SurfaceType.Smooth
+		Part6.brickColor = BrickColor.new("Hot pink")
+		SpecialMesh7.Parent = Part6
+		Part8.Name = "AssBum"
+		Part8.Parent = Model0
+		Part8.CFrame = CFrame.new(-23.002388, 1.77324367, 26.8604469, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Part8.Position = Vector3.new(-23.00238800048828, 1.7732436656951904, 26.86044692993164)
+		Part8.Size = Vector3.new(1.2000000476837158, 1.2000000476837158, 1.2000000476837158)
+		Part8.BottomSurface = Enum.SurfaceType.Smooth
+		Part8.CanCollide = false
+		Part8.TopSurface = Enum.SurfaceType.Smooth
+		Part8.Shape = Enum.PartType.Ball
+		Folder9.Name = "Welds"
+		Folder9.Parent = Model0
+		Weld10.Name = "Penis"
+		Weld10.Parent = Folder9
+		Weld10.C0 = CFrame.new(-1.20017052, -0.436733246, -0.271526337, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		Weld10.Part0 = Part3
+		Weld10.Part1 = Part1
+		Weld10.part1 = Part1
+		Weld11.Name = "Wearer"
+		Weld11.Parent = Folder9
+		Weld11.C0 = CFrame.new(-1.61795616, 1, 0.0416221619, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		Weld11.Part0 = Part3
+		Weld12.Name = "Penis"
+		Weld12.Parent = Folder9
+		Weld12.C0 = CFrame.new(-1.20017052, -0.436733246, 0.35477066, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+		Weld12.Part0 = Part3
+		Weld12.Part1 = Part2
+		Weld12.part1 = Part2
+		Weld13.Name = "Penis"
+		Weld13.Parent = Folder9
+		Weld13.C0 = CFrame.new(1.09956551, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 1)
+		Weld13.Part0 = Part3
+		Weld13.Part1 = Part6
+		Weld13.part1 = Part6
+		Weld14.Name = "Bums"
+		Weld14.Parent = Folder9
+		Weld14.C0 = CFrame.new(0.275003433, 1.22675633, -0.297334671, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Weld14.Part0 = Part8
+		Weld15.Name = "Bums"
+		Weld15.Parent = Folder9
+		Weld15.C0 = CFrame.new(0.275003433, 1.22675633, -0.297334671, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		Weld15.Part0 = Part8
+		
+		Weld11.Part1 = Char:FindFirstChild("Torso")
+		--Weld14.Part1 = Char:FindFirstChild("Torso")
+		--Weld15.Part1 = Char:FindFirstChild("Torso")
+		
+		for i,v in pairs(Model0:GetChildren()) do
+			if v:IsA("BasePart") then
+				if v.Name ~= "Ulo" then
+					v.Material = Enum.Material.SmoothPlastic
+					v.Color = Char:FindFirstChild("Torso").Color
+				end
+			end
+		end
+		end
+	end)
+	core()
+	--end))
+end)
+
+-- client char
+NLS([[
+
+if owner.Character ~= nil then
+
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Model0 = Instance.new("Model")
+Part1 = Instance.new("Part")
+SpecialMesh2 = Instance.new("SpecialMesh")
+Decal3 = Instance.new("Decal")
+Part4 = Instance.new("Part")
+Motor6D5 = Instance.new("Motor6D")
+Part6 = Instance.new("Part")
+Part7 = Instance.new("Part")
+Part8 = Instance.new("Part")
+Part9 = Instance.new("Part")
+Part10 = Instance.new("Part")
+Decal11 = Instance.new("Decal")
+Motor6D12 = Instance.new("Motor6D")
+Motor6D13 = Instance.new("Motor6D")
+Motor6D14 = Instance.new("Motor6D")
+Motor6D15 = Instance.new("Motor6D")
+Motor6D16 = Instance.new("Motor6D")
+Humanoid17 = Instance.new("Humanoid")
+LocalScript18 = Instance.new("LocalScript")
+StringValue19 = Instance.new("StringValue")
+Animation20 = Instance.new("Animation")
+NumberValue21 = Instance.new("NumberValue")
+Animation22 = Instance.new("Animation")
+NumberValue23 = Instance.new("NumberValue")
+StringValue24 = Instance.new("StringValue")
+Animation25 = Instance.new("Animation")
+StringValue26 = Instance.new("StringValue")
+Animation27 = Instance.new("Animation")
+StringValue28 = Instance.new("StringValue")
+Animation29 = Instance.new("Animation")
+StringValue30 = Instance.new("StringValue")
+Animation31 = Instance.new("Animation")
+StringValue32 = Instance.new("StringValue")
+Animation33 = Instance.new("Animation")
+StringValue34 = Instance.new("StringValue")
+Animation35 = Instance.new("Animation")
+StringValue36 = Instance.new("StringValue")
+Animation37 = Instance.new("Animation")
+BindableFunction38 = Instance.new("BindableFunction")
+NumberValue39 = Instance.new("NumberValue")
+Model0.Name = "nil"
+Model0.Parent = mas
+Model0.PrimaryPart = Part4
+Part1.Name = "Head"
+Part1.Parent = Model0
+Part1.CFrame = CFrame.new(-10.7439375, 4.5, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1.Position = Vector3.new(-10.743937492370605, 4.5, 26.563112258911133)
+Part1.Size = Vector3.new(2, 1, 1)
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.FormFactor = Enum.FormFactor.Symmetric
+Part1.formFactor = Enum.FormFactor.Symmetric
+SpecialMesh2.Parent = Part1
+SpecialMesh2.Scale = Vector3.new(1.25, 1.25, 1.25)
+Decal3.Name = "face"
+Decal3.Parent = Part1
+Decal3.Texture = "rbxasset://textures/face.png"
+Part4.Name = "HumanoidRootPart"
+Part4.Parent = Model0
+Part4.CFrame = CFrame.new(-10.7439375, 3, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part4.Position = Vector3.new(-10.743937492370605, 3, 26.563112258911133)
+Part4.Transparency = 1
+Part4.Size = Vector3.new(2, 2, 1)
+Part4.BottomSurface = Enum.SurfaceType.Smooth
+Part4.CanCollide = false
+Part4.LeftParamA = 0
+Part4.LeftParamB = 0
+Part4.RightParamA = 0
+Part4.RightParamB = 0
+Part4.TopSurface = Enum.SurfaceType.Smooth
+Part4.FormFactor = Enum.FormFactor.Symmetric
+Part4.formFactor = Enum.FormFactor.Symmetric
+Motor6D5.Name = "RootJoint"
+Motor6D5.Parent = Part4
+Motor6D5.MaxVelocity = 0.10000000149011612
+Motor6D5.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D5.C1 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D5.Part0 = Part4
+Motor6D5.Part1 = Part10
+Motor6D5.part1 = Part10
+Part6.Name = "Left Arm"
+Part6.Parent = Model0
+Part6.CFrame = CFrame.new(-12.2439375, 3, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part6.Position = Vector3.new(-12.243937492370605, 3, 26.563112258911133)
+Part6.Size = Vector3.new(1, 2, 1)
+Part6.CanCollide = false
+Part6.FormFactor = Enum.FormFactor.Symmetric
+Part6.formFactor = Enum.FormFactor.Symmetric
+Part7.Name = "Left Leg"
+Part7.Parent = Model0
+Part7.CFrame = CFrame.new(-11.2439375, 1, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part7.Position = Vector3.new(-11.243937492370605, 1, 26.563112258911133)
+Part7.Size = Vector3.new(1, 2, 1)
+Part7.BottomSurface = Enum.SurfaceType.Smooth
+Part7.CanCollide = false
+Part7.FormFactor = Enum.FormFactor.Symmetric
+Part7.formFactor = Enum.FormFactor.Symmetric
+Part8.Name = "Right Arm"
+Part8.Parent = Model0
+Part8.CFrame = CFrame.new(-9.24393749, 3, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part8.Position = Vector3.new(-9.243937492370605, 3, 26.563112258911133)
+Part8.Size = Vector3.new(1, 2, 1)
+Part8.CanCollide = false
+Part8.FormFactor = Enum.FormFactor.Symmetric
+Part8.formFactor = Enum.FormFactor.Symmetric
+Part9.Name = "Right Leg"
+Part9.Parent = Model0
+Part9.CFrame = CFrame.new(-10.2439375, 1, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part9.Position = Vector3.new(-10.243937492370605, 1, 26.563112258911133)
+Part9.Size = Vector3.new(1, 2, 1)
+Part9.BottomSurface = Enum.SurfaceType.Smooth
+Part9.CanCollide = false
+Part9.FormFactor = Enum.FormFactor.Symmetric
+Part9.formFactor = Enum.FormFactor.Symmetric
+Part10.Name = "Torso"
+Part10.Parent = Model0
+Part10.CFrame = CFrame.new(-10.7439375, 3, 26.5631123, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part10.Position = Vector3.new(-10.743937492370605, 3, 26.563112258911133)
+Part10.Size = Vector3.new(2, 2, 1)
+Part10.LeftParamA = 0
+Part10.LeftParamB = 0
+Part10.LeftSurface = Enum.SurfaceType.Weld
+Part10.RightParamA = 0
+Part10.RightParamB = 0
+Part10.RightSurface = Enum.SurfaceType.Weld
+Part10.FormFactor = Enum.FormFactor.Symmetric
+Part10.formFactor = Enum.FormFactor.Symmetric
+Decal11.Name = "roblox"
+Decal11.Parent = Part10
+Motor6D12.Name = "Right Shoulder"
+Motor6D12.Parent = Part10
+Motor6D12.MaxVelocity = 0.10000000149011612
+Motor6D12.C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D12.C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D12.Part0 = Part10
+Motor6D12.Part1 = Part8
+Motor6D12.part1 = Part8
+Motor6D13.Name = "Right Hip"
+Motor6D13.Parent = Part10
+Motor6D13.MaxVelocity = 0.10000000149011612
+Motor6D13.C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D13.C1 = CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D13.Part0 = Part10
+Motor6D13.Part1 = Part9
+Motor6D13.part1 = Part9
+Motor6D14.Name = "Neck"
+Motor6D14.Parent = Part10
+Motor6D14.MaxVelocity = 0.10000000149011612
+Motor6D14.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D14.C1 = CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D14.Part0 = Part10
+Motor6D14.Part1 = Part1
+Motor6D14.part1 = Part1
+Motor6D15.Name = "Left Shoulder"
+Motor6D15.Parent = Part10
+Motor6D15.MaxVelocity = 0.10000000149011612
+Motor6D15.C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D15.C1 = CFrame.new(0.5, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D15.Part0 = Part10
+Motor6D15.Part1 = Part6
+Motor6D15.part1 = Part6
+Motor6D16.Name = "Left Hip"
+Motor6D16.Parent = Part10
+Motor6D16.MaxVelocity = 0.10000000149011612
+Motor6D16.C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D16.C1 = CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D16.Part0 = Part10
+Motor6D16.Part1 = Part7
+Motor6D16.part1 = Part7
+Humanoid17.Parent = Model0
+Humanoid17.LeftLeg = Part7
+Humanoid17.RightLeg = Part9
+Humanoid17.Torso = Part4
+LocalScript18.Name = "Animate"
+LocalScript18.Parent = Model0
+table.insert(cors,sandbox(LocalScript18,function()
+-- humanoidAnimatePlayEmote.lua
+
+local Figure = script.Parent
+local Torso = Figure:WaitForChild("Torso")
+local RightShoulder = Torso:WaitForChild("Right Shoulder")
+local LeftShoulder = Torso:WaitForChild("Left Shoulder")
+local RightHip = Torso:WaitForChild("Right Hip")
+local LeftHip = Torso:WaitForChild("Left Hip")
+local Neck = Torso:WaitForChild("Neck")
+local Humanoid = Figure:WaitForChild("Humanoid")
+local pose = "Standing"
+
+local EMOTE_TRANSITION_TIME = 0.1
+
+local userAnimateScaleRunSuccess, userAnimateScaleRunValue = pcall(function() return UserSettings():IsUserFeatureEnabled("UserAnimateScaleRun") end)
+local userAnimateScaleRun = userAnimateScaleRunSuccess and userAnimateScaleRunValue
+
+local function getRigScale()
+	if userAnimateScaleRun then
+		return Figure:GetScale()
+	else
+		return 1
+	end
+end
+
+local currentAnim = ""
+local currentAnimInstance = nil
+local currentAnimTrack = nil
+local currentAnimKeyframeHandler = nil
+local currentAnimSpeed = 1.0
+local animTable = {}
+local animNames = { 
+	idle = 	{	
+				{ id = "http://www.roblox.com/asset/?id=180435571", weight = 9 },
+				{ id = "http://www.roblox.com/asset/?id=180435792", weight = 1 }
+			},
+	walk = 	{ 	
+				{ id = "http://www.roblox.com/asset/?id=180426354", weight = 10 } 
+			}, 
+	run = 	{
+				{ id = "run.xml", weight = 10 } 
+			}, 
+	jump = 	{
+				{ id = "http://www.roblox.com/asset/?id=125750702", weight = 10 } 
+			}, 
+	fall = 	{
+				{ id = "http://www.roblox.com/asset/?id=180436148", weight = 10 } 
+			}, 
+	climb = {
+				{ id = "http://www.roblox.com/asset/?id=180436334", weight = 10 } 
+			}, 
+	sit = 	{
+				{ id = "http://www.roblox.com/asset/?id=178130996", weight = 10 } 
+			},	
+	toolnone = {
+				{ id = "http://www.roblox.com/asset/?id=182393478", weight = 10 } 
+			},
+	toolslash = {
+				{ id = "http://www.roblox.com/asset/?id=129967390", weight = 10 } 
+--				{ id = "slash.xml", weight = 10 } 
+			},
+	toollunge = {
+				{ id = "http://www.roblox.com/asset/?id=129967478", weight = 10 } 
+			},
+	wave = {
+				{ id = "http://www.roblox.com/asset/?id=128777973", weight = 10 } 
+			},
+	point = {
+				{ id = "http://www.roblox.com/asset/?id=128853357", weight = 10 } 
+			},
+	dance1 = {
+				{ id = "http://www.roblox.com/asset/?id=182435998", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491037", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491065", weight = 10 } 
+			},
+	dance2 = {
+				{ id = "http://www.roblox.com/asset/?id=182436842", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491248", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491277", weight = 10 } 
+			},
+	dance3 = {
+				{ id = "http://www.roblox.com/asset/?id=182436935", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491368", weight = 10 }, 
+				{ id = "http://www.roblox.com/asset/?id=182491423", weight = 10 } 
+			},
+	laugh = {
+				{ id = "http://www.roblox.com/asset/?id=129423131", weight = 10 } 
+			},
+	cheer = {
+				{ id = "http://www.roblox.com/asset/?id=129423030", weight = 10 } 
+			},
+}
+local dances = {"dance1", "dance2", "dance3"}
+
+-- Existance in this list signifies that it is an emote, the value indicates if it is a looping emote
+local emoteNames = { wave = false, point = false, dance1 = true, dance2 = true, dance3 = true, laugh = false, cheer = false}
+
+function configureAnimationSet(name, fileList)
+	if (animTable[name] ~= nil) then
+		for _, connection in pairs(animTable[name].connections) do
+			connection:disconnect()
+		end
+	end
+	animTable[name] = {}
+	animTable[name].count = 0
+	animTable[name].totalWeight = 0	
+	animTable[name].connections = {}
+
+	-- check for config values
+	local config = script:FindFirstChild(name)
+	if (config ~= nil) then
+--		print("Loading anims " .. name)
+		table.insert(animTable[name].connections, config.ChildAdded:connect(function(child) configureAnimationSet(name, fileList) end))
+		table.insert(animTable[name].connections, config.ChildRemoved:connect(function(child) configureAnimationSet(name, fileList) end))
+		local idx = 1
+		for _, childPart in pairs(config:GetChildren()) do
+			if (childPart:IsA("Animation")) then
+				table.insert(animTable[name].connections, childPart.Changed:connect(function(property) configureAnimationSet(name, fileList) end))
+				animTable[name][idx] = {}
+				animTable[name][idx].anim = childPart
+				local weightObject = childPart:FindFirstChild("Weight")
+				if (weightObject == nil) then
+					animTable[name][idx].weight = 1
+				else
+					animTable[name][idx].weight = weightObject.Value
+				end
+				animTable[name].count = animTable[name].count + 1
+				animTable[name].totalWeight = animTable[name].totalWeight + animTable[name][idx].weight
+	--			print(name .. " [" .. idx .. "] " .. animTable[name][idx].anim.AnimationId .. " (" .. animTable[name][idx].weight .. ")")
+				idx = idx + 1
+			end
+		end
+	end
+
+	-- fallback to defaults
+	if (animTable[name].count <= 0) then
+		for idx, anim in pairs(fileList) do
+			animTable[name][idx] = {}
+			animTable[name][idx].anim = Instance.new("Animation")
+			animTable[name][idx].anim.Name = name
+			animTable[name][idx].anim.AnimationId = anim.id
+			animTable[name][idx].weight = anim.weight
+			animTable[name].count = animTable[name].count + 1
+			animTable[name].totalWeight = animTable[name].totalWeight + anim.weight
+--			print(name .. " [" .. idx .. "] " .. anim.id .. " (" .. anim.weight .. ")")
+		end
+	end
+end
+
+-- Setup animation objects
+function scriptChildModified(child)
+	local fileList = animNames[child.Name]
+	if (fileList ~= nil) then
+		configureAnimationSet(child.Name, fileList)
+	end	
+end
+
+script.ChildAdded:connect(scriptChildModified)
+script.ChildRemoved:connect(scriptChildModified)
+
+-- Clear any existing animation tracks
+-- Fixes issue with characters that are moved in and out of the Workspace accumulating tracks
+local animator = if Humanoid then Humanoid:FindFirstChildOfClass("Animator") else nil
+if animator then
+	local animTracks = animator:GetPlayingAnimationTracks()
+	for i,track in ipairs(animTracks) do
+		track:Stop(0)
+		track:Destroy()
+	end
+end
+
+
+for name, fileList in pairs(animNames) do 
+	configureAnimationSet(name, fileList)
+end	
+
+-- ANIMATION
+
+-- declarations
+local toolAnim = "None"
+local toolAnimTime = 0
+
+local jumpAnimTime = 0
+local jumpAnimDuration = 0.3
+
+local toolTransitionTime = 0.1
+local fallTransitionTime = 0.3
+local jumpMaxLimbVelocity = 0.75
+
+-- functions
+
+function stopAllAnimations()
+	local oldAnim = currentAnim
+
+	-- return to idle if finishing an emote
+	if (emoteNames[oldAnim] ~= nil and emoteNames[oldAnim] == false) then
+		oldAnim = "idle"
+	end
+
+	currentAnim = ""
+	currentAnimInstance = nil
+	if (currentAnimKeyframeHandler ~= nil) then
+		currentAnimKeyframeHandler:disconnect()
+	end
+
+	if (currentAnimTrack ~= nil) then
+		currentAnimTrack:Stop()
+		currentAnimTrack:Destroy()
+		currentAnimTrack = nil
+	end
+	return oldAnim
+end
+
+function setAnimationSpeed(speed)
+	if speed ~= currentAnimSpeed then
+		currentAnimSpeed = speed
+		currentAnimTrack:AdjustSpeed(currentAnimSpeed)
+	end
+end
+
+function keyFrameReachedFunc(frameName)
+	if (frameName == "End") then
+
+		local repeatAnim = currentAnim
+		-- return to idle if finishing an emote
+		if (emoteNames[repeatAnim] ~= nil and emoteNames[repeatAnim] == false) then
+			repeatAnim = "idle"
+		end
+		
+		local animSpeed = currentAnimSpeed
+		playAnimation(repeatAnim, 0.0, Humanoid)
+		setAnimationSpeed(animSpeed)
+	end
+end
+
+-- Preload animations
+function playAnimation(animName, transitionTime, humanoid) 
+		
+	local roll = math.random(1, animTable[animName].totalWeight) 
+	local origRoll = roll
+	local idx = 1
+	while (roll > animTable[animName][idx].weight) do
+		roll = roll - animTable[animName][idx].weight
+		idx = idx + 1
+	end
+--		print(animName .. " " .. idx .. " [" .. origRoll .. "]")
+	local anim = animTable[animName][idx].anim
+
+	-- switch animation		
+	if (anim ~= currentAnimInstance) then
+		
+		if (currentAnimTrack ~= nil) then
+			currentAnimTrack:Stop(transitionTime)
+			currentAnimTrack:Destroy()
+		end
+
+		currentAnimSpeed = 1.0
+	
+		-- load it to the humanoid; get AnimationTrack
+		currentAnimTrack = humanoid:LoadAnimation(anim)
+		currentAnimTrack.Priority = Enum.AnimationPriority.Core
+		 
+		-- play the animation
+		currentAnimTrack:Play(transitionTime)
+		currentAnim = animName
+		currentAnimInstance = anim
+
+		-- set up keyframe name triggers
+		if (currentAnimKeyframeHandler ~= nil) then
+			currentAnimKeyframeHandler:disconnect()
+		end
+		currentAnimKeyframeHandler = currentAnimTrack.KeyframeReached:connect(keyFrameReachedFunc)
+		
+	end
+
+end
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+local toolAnimName = ""
+local toolAnimTrack = nil
+local toolAnimInstance = nil
+local currentToolAnimKeyframeHandler = nil
+
+function toolKeyFrameReachedFunc(frameName)
+	if (frameName == "End") then
+--		print("Keyframe : ".. frameName)	
+		playToolAnimation(toolAnimName, 0.0, Humanoid)
+	end
+end
+
+
+function playToolAnimation(animName, transitionTime, humanoid, priority)	 
+		
+		local roll = math.random(1, animTable[animName].totalWeight) 
+		local origRoll = roll
+		local idx = 1
+		while (roll > animTable[animName][idx].weight) do
+			roll = roll - animTable[animName][idx].weight
+			idx = idx + 1
+		end
+--		print(animName .. " * " .. idx .. " [" .. origRoll .. "]")
+		local anim = animTable[animName][idx].anim
+
+		if (toolAnimInstance ~= anim) then
+			
+			if (toolAnimTrack ~= nil) then
+				toolAnimTrack:Stop()
+				toolAnimTrack:Destroy()
+				transitionTime = 0
+			end
+					
+			-- load it to the humanoid; get AnimationTrack
+			toolAnimTrack = humanoid:LoadAnimation(anim)
+			if priority then
+				toolAnimTrack.Priority = priority
+			end
+			 
+			-- play the animation
+			toolAnimTrack:Play(transitionTime)
+			toolAnimName = animName
+			toolAnimInstance = anim
+
+			currentToolAnimKeyframeHandler = toolAnimTrack.KeyframeReached:connect(toolKeyFrameReachedFunc)
+		end
+end
+
+function stopToolAnimations()
+	local oldAnim = toolAnimName
+
+	if (currentToolAnimKeyframeHandler ~= nil) then
+		currentToolAnimKeyframeHandler:disconnect()
+	end
+
+	toolAnimName = ""
+	toolAnimInstance = nil
+	if (toolAnimTrack ~= nil) then
+		toolAnimTrack:Stop()
+		toolAnimTrack:Destroy()
+		toolAnimTrack = nil
+	end
+
+
+	return oldAnim
+end
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+
+function onRunning(speed)
+	speed /= getRigScale()
+	
+	if speed > 0.01 then
+		playAnimation("walk", 0.1, Humanoid)
+		if currentAnimInstance and currentAnimInstance.AnimationId == "http://www.roblox.com/asset/?id=180426354" then
+			setAnimationSpeed(speed / 14.5)
+		end
+		pose = "Running"
+	else
+		if emoteNames[currentAnim] == nil then
+			playAnimation("idle", 0.1, Humanoid)
+			pose = "Standing"
+		end
+	end
+end
+
+function onDied()
+	pose = "Dead"
+end
+
+function onJumping()
+	playAnimation("jump", 0.1, Humanoid)
+	jumpAnimTime = jumpAnimDuration
+	pose = "Jumping"
+end
+
+function onClimbing(speed)
+	speed /= getRigScale()
+	
+	playAnimation("climb", 0.1, Humanoid)
+	setAnimationSpeed(speed / 12.0)
+	pose = "Climbing"
+end
+
+function onGettingUp()
+	pose = "GettingUp"
+end
+
+function onFreeFall()
+	if (jumpAnimTime <= 0) then
+		playAnimation("fall", fallTransitionTime, Humanoid)
+	end
+	pose = "FreeFall"
+end
+
+function onFallingDown()
+	pose = "FallingDown"
+end
+
+function onSeated()
+	pose = "Seated"
+end
+
+function onPlatformStanding()
+	pose = "PlatformStanding"
+end
+
+function onSwimming(speed)
+	if speed > 0 then
+		pose = "Running"
+	else
+		pose = "Standing"
+	end
+end
+
+function getTool()	
+	for _, kid in ipairs(Figure:GetChildren()) do
+		if kid.className == "Tool" then return kid end
+	end
+	return nil
+end
+
+function getToolAnim(tool)
+	for _, c in ipairs(tool:GetChildren()) do
+		if c.Name == "toolanim" and c.className == "StringValue" then
+			return c
+		end
+	end
+	return nil
+end
+
+function animateTool()
+	
+	if (toolAnim == "None") then
+		playToolAnimation("toolnone", toolTransitionTime, Humanoid, Enum.AnimationPriority.Idle)
+		return
+	end
+
+	if (toolAnim == "Slash") then
+		playToolAnimation("toolslash", 0, Humanoid, Enum.AnimationPriority.Action)
+		return
+	end
+
+	if (toolAnim == "Lunge") then
+		playToolAnimation("toollunge", 0, Humanoid, Enum.AnimationPriority.Action)
+		return
+	end
+end
+
+function moveSit()
+	RightShoulder.MaxVelocity = 0.15
+	LeftShoulder.MaxVelocity = 0.15
+	RightShoulder:SetDesiredAngle(3.14 /2)
+	LeftShoulder:SetDesiredAngle(-3.14 /2)
+	RightHip:SetDesiredAngle(3.14 /2)
+	LeftHip:SetDesiredAngle(-3.14 /2)
+end
+
+local lastTick = 0
+
+function move(time)
+	local amplitude = 1
+	local frequency = 1
+  	local deltaTime = time - lastTick
+  	lastTick = time
+
+	local climbFudge = 0
+	local setAngles = false
+
+  	if (jumpAnimTime > 0) then
+  		jumpAnimTime = jumpAnimTime - deltaTime
+  	end
+
+	if (pose == "FreeFall" and jumpAnimTime <= 0) then
+		playAnimation("fall", fallTransitionTime, Humanoid)
+	elseif (pose == "Seated") then
+		playAnimation("sit", 0.5, Humanoid)
+		return
+	elseif (pose == "Running") then
+		playAnimation("walk", 0.1, Humanoid)
+	elseif (pose == "Dead" or pose == "GettingUp" or pose == "FallingDown" or pose == "Seated" or pose == "PlatformStanding") then
+--		print("Wha " .. pose)
+		stopAllAnimations()
+		amplitude = 0.1
+		frequency = 1
+		setAngles = true
+	end
+
+	if (setAngles) then
+		local desiredAngle = amplitude * math.sin(time * frequency)
+
+		RightShoulder:SetDesiredAngle(desiredAngle + climbFudge)
+		LeftShoulder:SetDesiredAngle(desiredAngle - climbFudge)
+		RightHip:SetDesiredAngle(-desiredAngle)
+		LeftHip:SetDesiredAngle(-desiredAngle)
+	end
+
+	-- Tool Animation handling
+	local tool = getTool()
+	if tool and tool:FindFirstChild("Handle") then
+	
+		local animStringValueObject = getToolAnim(tool)
+
+		if animStringValueObject then
+			toolAnim = animStringValueObject.Value
+			-- message recieved, delete StringValue
+			animStringValueObject.Parent = nil
+			toolAnimTime = time + .3
+		end
+
+		if time > toolAnimTime then
+			toolAnimTime = 0
+			toolAnim = "None"
+		end
+
+		animateTool()		
+	else
+		stopToolAnimations()
+		toolAnim = "None"
+		toolAnimInstance = nil
+		toolAnimTime = 0
+	end
+end
+
+-- connect events
+Humanoid.Died:connect(onDied)
+Humanoid.Running:connect(onRunning)
+Humanoid.Jumping:connect(onJumping)
+Humanoid.Climbing:connect(onClimbing)
+Humanoid.GettingUp:connect(onGettingUp)
+Humanoid.FreeFalling:connect(onFreeFall)
+Humanoid.FallingDown:connect(onFallingDown)
+Humanoid.Seated:connect(onSeated)
+Humanoid.PlatformStanding:connect(onPlatformStanding)
+Humanoid.Swimming:connect(onSwimming)
+
+---- setup emote chat hook
+game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
+	local emote = ""
+	if msg == "/e dance" then
+		emote = dances[math.random(1, #dances)]
+	elseif (string.sub(msg, 1, 3) == "/e ") then
+		emote = string.sub(msg, 4)
+	elseif (string.sub(msg, 1, 7) == "/emote ") then
+		emote = string.sub(msg, 8)
+	end
+	
+	if (pose == "Standing" and emoteNames[emote] ~= nil) then
+		playAnimation(emote, 0.1, Humanoid)
+	end
+
+end)
+
+-- emote bindable hook
+script:WaitForChild("PlayEmote").OnInvoke = function(emote)
+	-- Only play emotes when idling
+	if pose ~= "Standing" then
+		return
+	end
+	if emoteNames[emote] ~= nil then
+		-- Default emotes
+		playAnimation(emote, EMOTE_TRANSITION_TIME, Humanoid)
+
+		return true, currentAnimTrack
+	end
+
+	-- Return false to indicate that the emote could not be played
+	return false
+end
+-- main program
+
+-- initialize to idle
+playAnimation("idle", 0.1, Humanoid)
+pose = "Standing"
+
+while Figure.Parent ~= nil do
+	local _, time = wait(0.1)
+	move(time)
+end
+
+
+
+end))
+StringValue19.Name = "idle"
+StringValue19.Parent = LocalScript18
+Animation20.Name = "Animation1"
+Animation20.Parent = StringValue19
+Animation20.AnimationId = "http://www.roblox.com/asset/?id=180435571"
+NumberValue21.Name = "Weight"
+NumberValue21.Parent = Animation20
+NumberValue21.Value = 9
+Animation22.Name = "Animation2"
+Animation22.Parent = StringValue19
+Animation22.AnimationId = "http://www.roblox.com/asset/?id=180435792"
+NumberValue23.Name = "Weight"
+NumberValue23.Parent = Animation22
+NumberValue23.Value = 1
+StringValue24.Name = "walk"
+StringValue24.Parent = LocalScript18
+Animation25.Name = "WalkAnim"
+Animation25.Parent = StringValue24
+Animation25.AnimationId = "http://www.roblox.com/asset/?id=180426354"
+StringValue26.Name = "run"
+StringValue26.Parent = LocalScript18
+Animation27.Name = "RunAnim"
+Animation27.Parent = StringValue26
+Animation27.AnimationId = "http://www.roblox.com/asset/?id=180426354"
+StringValue28.Name = "jump"
+StringValue28.Parent = LocalScript18
+Animation29.Name = "JumpAnim"
+Animation29.Parent = StringValue28
+Animation29.AnimationId = "http://www.roblox.com/asset/?id=125750702"
+StringValue30.Name = "climb"
+StringValue30.Parent = LocalScript18
+Animation31.Name = "ClimbAnim"
+Animation31.Parent = StringValue30
+Animation31.AnimationId = "http://www.roblox.com/asset/?id=180436334"
+StringValue32.Name = "toolnone"
+StringValue32.Parent = LocalScript18
+Animation33.Name = "ToolNoneAnim"
+Animation33.Parent = StringValue32
+Animation33.AnimationId = "http://www.roblox.com/asset/?id=182393478"
+StringValue34.Name = "fall"
+StringValue34.Parent = LocalScript18
+Animation35.Name = "FallAnim"
+Animation35.Parent = StringValue34
+Animation35.AnimationId = "http://www.roblox.com/asset/?id=180436148"
+StringValue36.Name = "sit"
+StringValue36.Parent = LocalScript18
+Animation37.Name = "SitAnim"
+Animation37.Parent = StringValue36
+Animation37.AnimationId = "http://www.roblox.com/asset/?id=178130996"
+BindableFunction38.Name = "PlayEmote"
+BindableFunction38.Parent = LocalScript18
+NumberValue39.Name = "ScaleDampeningPercent"
+NumberValue39.Parent = LocalScript18
+NumberValue39.Value = 1
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = script
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
+
+
+owner.Character = Model0
+workspace.CurrentCamera.CameraSubject = Humanoid17
+
+
+
+end
+
+]])
+
+NLS([[
+
+script.Parent = nil
+
+local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteEvent")
+
+ScreenGui0 = Instance.new("ScreenGui")
+MainFrame = Instance.new("Frame")
+TextLabel2 = Instance.new("TextLabel")
+PlayerNameBOX = Instance.new("TextBox")
+Sexecute = Instance.new("TextButton")
+CloseButton = Instance.new("TextButton")
+OpenButton = Instance.new("TextButton")
+ScreenGui0.Name = "TITEGui"
+ScreenGui0.Parent = owner.PlayerGui
+ScreenGui0.ResetOnSpawn = false
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui0
+MainFrame.Position = UDim2.new(0.572668135, 0, 0.361861855, 0)
+MainFrame.Visible = false
+MainFrame.Size = UDim2.new(0, 247, 0, 295)
+MainFrame.BackgroundColor = BrickColor.new("Institutional white")
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MainFrame.BorderColor = BrickColor.new("Really black")
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Draggable = true
+TextLabel2.Name = "Label"
+TextLabel2.Parent = MainFrame
+TextLabel2.Position = UDim2.new(2.47105902e-07, 0, 0, 0)
+TextLabel2.Size = UDim2.new(0, 246, 0, 58)
+TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.BorderColor = BrickColor.new("Really black")
+TextLabel2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Font = Enum.Font.FredokaOne
+TextLabel2.FontSize = Enum.FontSize.Size14
+TextLabel2.Text = "Tite Gui"
+TextLabel2.TextColor = BrickColor.new("Really black")
+TextLabel2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14
+TextLabel2.TextWrap = true
+TextLabel2.TextWrapped = true
+PlayerNameBOX.Name = "PlrName"
+PlayerNameBOX.Parent = MainFrame
+PlayerNameBOX.Position = UDim2.new(0.0931174085, 0, 0.284745753, 0)
+PlayerNameBOX.Size = UDim2.new(0, 200, 0, 50)
+PlayerNameBOX.BackgroundColor = BrickColor.new("Really black")
+PlayerNameBOX.BackgroundColor3 = Color3.new(0, 0, 0)
+PlayerNameBOX.BorderColor = BrickColor.new("Really black")
+PlayerNameBOX.BorderColor3 = Color3.new(0, 0, 0)
+PlayerNameBOX.BorderSizePixel = 0
+PlayerNameBOX.Font = Enum.Font.FredokaOne
+PlayerNameBOX.FontSize = Enum.FontSize.Size14
+PlayerNameBOX.Text = ""
+PlayerNameBOX.TextColor = BrickColor.new("Institutional white")
+PlayerNameBOX.TextColor3 = Color3.new(1, 1, 1)
+PlayerNameBOX.TextScaled = true
+PlayerNameBOX.TextSize = 14
+PlayerNameBOX.TextWrap = true
+PlayerNameBOX.TextWrapped = true
+PlayerNameBOX.PlaceholderColor3 = Color3.new(1, 1, 1)
+PlayerNameBOX.PlaceholderText = "Player Name"
+Sexecute.Name = "Execute"
+Sexecute.Parent = MainFrame
+Sexecute.Position = UDim2.new(0.0931174085, 0, 0.562711835, 0)
+Sexecute.Size = UDim2.new(0, 200, 0, 67)
+Sexecute.BackgroundColor = BrickColor.new("Institutional white")
+Sexecute.BackgroundColor3 = Color3.new(1, 1, 1)
+Sexecute.BackgroundTransparency = 1
+Sexecute.BorderColor = BrickColor.new("Really black")
+Sexecute.BorderColor3 = Color3.new(0, 0, 0)
+Sexecute.BorderSizePixel = 0
+Sexecute.Font = Enum.Font.FredokaOne
+Sexecute.FontSize = Enum.FontSize.Size14
+Sexecute.Text = "Sexecute"
+Sexecute.TextColor = BrickColor.new("Really black")
+Sexecute.TextColor3 = Color3.new(0, 0, 0)
+Sexecute.TextScaled = true
+Sexecute.TextSize = 14
+Sexecute.TextWrap = true
+Sexecute.TextWrapped = true
+CloseButton.Name = "Close"
+CloseButton.Parent = MainFrame
+CloseButton.Position = UDim2.new(0.700404882, 0, 0.857627094, 0)
+CloseButton.Size = UDim2.new(0, 73, 0, 42)
+CloseButton.BackgroundColor = BrickColor.new("Really red")
+CloseButton.BackgroundColor3 = Color3.new(1, 0, 0)
+CloseButton.BorderColor = BrickColor.new("Really black")
+CloseButton.BorderColor3 = Color3.new(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.FontSize = Enum.FontSize.Size14
+CloseButton.Text = "Close"
+CloseButton.TextColor = BrickColor.new("Really black")
+CloseButton.TextColor3 = Color3.new(0, 0, 0)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14
+CloseButton.TextWrap = true
+CloseButton.TextWrapped = true
+OpenButton.Name = "Opener"
+OpenButton.Parent = ScreenGui0
+OpenButton.Position = UDim2.new(0.813449025, 0, 0.866366386, 0)
+OpenButton.Size = UDim2.new(0, 258, 0, 89)
+OpenButton.BackgroundColor = BrickColor.new("Black")
+OpenButton.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+OpenButton.BorderColor = BrickColor.new("Really black")
+OpenButton.BorderColor3 = Color3.new(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Font = Enum.Font.FredokaOne
+OpenButton.FontSize = Enum.FontSize.Size14
+OpenButton.Text = "Open GUI"
+OpenButton.TextColor = BrickColor.new("Institutional white")
+OpenButton.TextColor3 = Color3.new(1, 1, 1)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14
+OpenButton.TextWrap = true
+OpenButton.TextWrapped = true
+
+OpenButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = true
+	OpenButton.Visible = false
+end)
+
+CloseButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = false
+	OpenButton.Visible = true
+end)
+
+Sexecute.MouseButton1Down:Connect(function()
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(PlayerNameBOX.Text)) == string.lower(PlayerNameBOX.Text) and string.lower(PlayerNameBOX.Text) ~= "all" and string.lower(PlayerNameBOX.Text) ~= "others" and string.lower(PlayerNameBOX.Text) ~= "me") or string.lower(PlayerNameBOX.Text) == "all" or (string.lower(PlayerNameBOX.Text) == "others" and v ~= game:GetService("Players").LocalPlayer) or (string.lower(PlayerNameBOX.Text) == "me" and v == game:GetService("Players").LocalPlayer) then
+			local coru = coroutine.wrap(function()
+				print("Summoning Dick for "..v.Name)
+				remfunc:FireServer(v.Name)
+			end)
+			coru()
+		end
+	end
+end)
+
+]])
+
+--[[
+
+local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteFunction")
+
+ScreenGui0 = Instance.new("ScreenGui")
+MainFrame = Instance.new("Frame")
+TextLabel2 = Instance.new("TextLabel")
+PlayerNameBOX = Instance.new("TextBox")
+Sexecute = Instance.new("TextButton")
+CloseButton = Instance.new("TextButton")
+OpenButton = Instance.new("TextButton")
+ScreenGui0.Name = "TITEGui"
+ScreenGui0.Parent = owner.PlayerGui
+ScreenGui0.ResetOnSpawn = false
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui0
+MainFrame.Position = UDim2.new(0.572668135, 0, 0.361861855, 0)
+MainFrame.Visible = false
+MainFrame.Size = UDim2.new(0, 247, 0, 295)
+MainFrame.BackgroundColor = BrickColor.new("Institutional white")
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MainFrame.BorderColor = BrickColor.new("Really black")
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Draggable = true
+TextLabel2.Name = "Label"
+TextLabel2.Parent = MainFrame
+TextLabel2.Position = UDim2.new(2.47105902e-07, 0, 0, 0)
+TextLabel2.Size = UDim2.new(0, 246, 0, 58)
+TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.BorderColor = BrickColor.new("Really black")
+TextLabel2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Font = Enum.Font.FredokaOne
+TextLabel2.FontSize = Enum.FontSize.Size14
+TextLabel2.Text = "Tite Gui"
+TextLabel2.TextColor = BrickColor.new("Really black")
+TextLabel2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14
+TextLabel2.TextWrap = true
+TextLabel2.TextWrapped = true
+PlayerNameBOX.Name = "PlrName"
+PlayerNameBOX.Parent = MainFrame
+PlayerNameBOX.Position = UDim2.new(0.0931174085, 0, 0.284745753, 0)
+PlayerNameBOX.Size = UDim2.new(0, 200, 0, 50)
+PlayerNameBOX.BackgroundColor = BrickColor.new("Really black")
+PlayerNameBOX.BackgroundColor3 = Color3.new(0, 0, 0)
+PlayerNameBOX.BorderColor = BrickColor.new("Really black")
+PlayerNameBOX.BorderColor3 = Color3.new(0, 0, 0)
+PlayerNameBOX.BorderSizePixel = 0
+PlayerNameBOX.Font = Enum.Font.FredokaOne
+PlayerNameBOX.FontSize = Enum.FontSize.Size14
+PlayerNameBOX.Text = ""
+PlayerNameBOX.TextColor = BrickColor.new("Institutional white")
+PlayerNameBOX.TextColor3 = Color3.new(1, 1, 1)
+PlayerNameBOX.TextScaled = true
+PlayerNameBOX.TextSize = 14
+PlayerNameBOX.TextWrap = true
+PlayerNameBOX.TextWrapped = true
+PlayerNameBOX.PlaceholderColor3 = Color3.new(1, 1, 1)
+PlayerNameBOX.PlaceholderText = "Player Name"
+Sexecute.Name = "Execute"
+Sexecute.Parent = MainFrame
+Sexecute.Position = UDim2.new(0.0931174085, 0, 0.562711835, 0)
+Sexecute.Size = UDim2.new(0, 200, 0, 67)
+Sexecute.BackgroundColor = BrickColor.new("Institutional white")
+Sexecute.BackgroundColor3 = Color3.new(1, 1, 1)
+Sexecute.BackgroundTransparency = 1
+Sexecute.BorderColor = BrickColor.new("Really black")
+Sexecute.BorderColor3 = Color3.new(0, 0, 0)
+Sexecute.BorderSizePixel = 0
+Sexecute.Font = Enum.Font.FredokaOne
+Sexecute.FontSize = Enum.FontSize.Size14
+Sexecute.Text = "Sexecute"
+Sexecute.TextColor = BrickColor.new("Really black")
+Sexecute.TextColor3 = Color3.new(0, 0, 0)
+Sexecute.TextScaled = true
+Sexecute.TextSize = 14
+Sexecute.TextWrap = true
+Sexecute.TextWrapped = true
+CloseButton.Name = "Close"
+CloseButton.Parent = MainFrame
+CloseButton.Position = UDim2.new(0.700404882, 0, 0.857627094, 0)
+CloseButton.Size = UDim2.new(0, 73, 0, 42)
+CloseButton.BackgroundColor = BrickColor.new("Really red")
+CloseButton.BackgroundColor3 = Color3.new(1, 0, 0)
+CloseButton.BorderColor = BrickColor.new("Really black")
+CloseButton.BorderColor3 = Color3.new(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.FontSize = Enum.FontSize.Size14
+CloseButton.Text = "Close"
+CloseButton.TextColor = BrickColor.new("Really black")
+CloseButton.TextColor3 = Color3.new(0, 0, 0)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14
+CloseButton.TextWrap = true
+CloseButton.TextWrapped = true
+OpenButton.Name = "Opener"
+OpenButton.Parent = ScreenGui0
+OpenButton.Position = UDim2.new(0.813449025, 0, 0.866366386, 0)
+OpenButton.Size = UDim2.new(0, 258, 0, 89)
+OpenButton.BackgroundColor = BrickColor.new("Black")
+OpenButton.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+OpenButton.BorderColor = BrickColor.new("Really black")
+OpenButton.BorderColor3 = Color3.new(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Font = Enum.Font.FredokaOne
+OpenButton.FontSize = Enum.FontSize.Size14
+OpenButton.Text = "Open GUI"
+OpenButton.TextColor = BrickColor.new("Institutional white")
+OpenButton.TextColor3 = Color3.new(1, 1, 1)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14
+OpenButton.TextWrap = true
+OpenButton.TextWrapped = true
+
+OpenButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = true
+	OpenButton.Visible = false
+end)
+
+CloseButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = false
+	OpenButton.Visible = true
+end)
+
+Sexecute.MouseButton1Down:Connect(function()
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(PlayerNameBOX.Text)) == string.lower(PlayerNameBOX.Text) and string.lower(PlayerNameBOX.Text) ~= "all" and string.lower(PlayerNameBOX.Text) ~= "others" and string.lower(PlayerNameBOX.Text) ~= "me") or string.lower(PlayerNameBOX.Text) == "all" or (string.lower(PlayerNameBOX.Text) == "others" and v ~= game:GetService("Players").LocalPlayer) or (string.lower(PlayerNameBOX.Text) == "me" and v == game:GetService("Players").LocalPlayer) then
+			local coru = coroutine.wrap(function()
+				print("Summoning Dick for "..v.Name)
+				remfunc:InvokeServer(v.Name)
+			end)
+			coru()
+		end
+	end
+end)
+
+]]
