@@ -125,7 +125,11 @@ RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 		Weld15.Parent = Folder9
 		Weld15.C0 = CFrame.new(0.275003433, 1.22675633, -0.297334671, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 		Weld15.Part0 = Part8
-
+		
+		Weld11.Part1 = Char:FindFirstChild("Torso")
+		Weld14.Part1 = Char:FindFirstChild("Torso")
+		Weld15.Part1 = Char:FindFirstChild("Torso")
+		
 		for i,v in pairs(Model0:GetChildren()) do
 			if v:IsA("BasePart") then
 				if v.Name ~= "Ulo" then
@@ -134,11 +138,6 @@ RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 				end
 			end
 		end
-		
-		Weld11.Part1 = Char:FindFirstChildOfClass("Humanoid").RootPart
-		Weld14.Part1 = Char:FindFirstChildOfClass("Humanoid").RootPart
-		Weld15.Part1 = Char:FindFirstChildOfClass("Humanoid").RootPart
-		
 	end
 	
 end)
