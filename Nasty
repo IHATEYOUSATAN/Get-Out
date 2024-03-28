@@ -281,6 +281,7 @@ Sexecute.MouseButton1Down:Connect(function()
 				print("Summoning Dick for "..v.Name)
 				remfunc:InvokeServer(v.Name)
 			end)
+			coru()
 		end
 	end
 end)
@@ -425,6 +426,7 @@ Sexecute.MouseButton1Down:Connect(function()
 				print("Summoning Dick for "..v.Name)
 				remfunc:InvokeServer(v.Name)
 			end)
+			coru()
 		end
 	end
 end)
