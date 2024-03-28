@@ -127,14 +127,14 @@ RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 		Weld15.Part0 = Part8
 		
 		Weld11.Part1 = Char:FindFirstChild("Torso")
-		Weld14.Part1 = Char:FindFirstChild("Torso")
-		Weld15.Part1 = Char:FindFirstChild("Torso")
+		--Weld14.Part1 = Char:FindFirstChild("Torso")
+		--Weld15.Part1 = Char:FindFirstChild("Torso")
 		
 		for i,v in pairs(Model0:GetChildren()) do
 			if v:IsA("BasePart") then
 				if v.Name ~= "Ulo" then
 					v.Material = Enum.Material.SmoothPlastic
-					v.Color = Color3.fromRGB(Char:FindFirstChild("Torso").Color)
+					v.Color = Char:FindFirstChild("Torso").Color
 				end
 			end
 		end
