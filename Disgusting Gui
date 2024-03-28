@@ -319,6 +319,8 @@ Instance.new("ForceField",workspace[owner.Name]).Visible = false
 print("Done")
 end
 
+wait(7)
+
 print("Scripting GUI")
 --script.Parent = nil
 
