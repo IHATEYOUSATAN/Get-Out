@@ -11,7 +11,7 @@ RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 	local Play = game:GetService("Players")[Victim]
 	local Char = Play.Character
 	
-	if Char:FindFirstChildOfClass("Humanoid").RigType ~= Enum.RigType.R15 then
+	if Char:FindFirstChildOfClass("Humanoid").RigType ~= "R15" then
 		
 		local Model0 = Instance.new("Model")
 		local Part1 = Instance.new("Part")
