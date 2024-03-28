@@ -150,7 +150,6 @@ RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 end)
 
 -- client char
-NLS([[
 
 print("Scripting GUI")
 --script.Parent = nil
@@ -296,6 +295,9 @@ Sexecute.MouseButton1Down:Connect(function()
 	end
 end)
 
+
+
+NLS([[
 
 
 print("Scripting Client Character")
