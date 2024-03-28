@@ -152,6 +152,153 @@ end)
 -- client char
 NLS([[
 
+print("Scripting GUI")
+--script.Parent = nil
+
+local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteEvent")
+
+ScreenGui0 = Instance.new("ScreenGui")
+MainFrame = Instance.new("Frame")
+TextLabel2 = Instance.new("TextLabel")
+PlayerNameBOX = Instance.new("TextBox")
+Sexecute = Instance.new("TextButton")
+CloseButton = Instance.new("TextButton")
+OpenButton = Instance.new("TextButton")
+ScreenGui0.Name = "TITEGui"
+ScreenGui0.Parent = owner.PlayerGui
+ScreenGui0.ResetOnSpawn = true
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui0
+MainFrame.Position = UDim2.new(0.572668135, 0, 0.361861855, 0)
+MainFrame.Visible = false
+MainFrame.Size = UDim2.new(0, 247, 0, 295)
+MainFrame.BackgroundColor = BrickColor.new("Institutional white")
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MainFrame.BorderColor = BrickColor.new("Really black")
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Draggable = true
+TextLabel2.Name = "Label"
+TextLabel2.Parent = MainFrame
+TextLabel2.Position = UDim2.new(2.47105902e-07, 0, 0, 0)
+TextLabel2.Size = UDim2.new(0, 246, 0, 58)
+TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel2.BackgroundTransparency = 1
+TextLabel2.BorderColor = BrickColor.new("Really black")
+TextLabel2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Font = Enum.Font.FredokaOne
+TextLabel2.FontSize = Enum.FontSize.Size14
+TextLabel2.Text = "Tite Gui"
+TextLabel2.TextColor = BrickColor.new("Really black")
+TextLabel2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14
+TextLabel2.TextWrap = true
+TextLabel2.TextWrapped = true
+PlayerNameBOX.Name = "PlrName"
+PlayerNameBOX.Parent = MainFrame
+PlayerNameBOX.Position = UDim2.new(0.0931174085, 0, 0.284745753, 0)
+PlayerNameBOX.Size = UDim2.new(0, 200, 0, 50)
+PlayerNameBOX.BackgroundColor = BrickColor.new("Really black")
+PlayerNameBOX.BackgroundColor3 = Color3.new(0, 0, 0)
+PlayerNameBOX.BorderColor = BrickColor.new("Really black")
+PlayerNameBOX.BorderColor3 = Color3.new(0, 0, 0)
+PlayerNameBOX.BorderSizePixel = 0
+PlayerNameBOX.Font = Enum.Font.FredokaOne
+PlayerNameBOX.FontSize = Enum.FontSize.Size14
+PlayerNameBOX.Text = ""
+PlayerNameBOX.TextColor = BrickColor.new("Institutional white")
+PlayerNameBOX.TextColor3 = Color3.new(1, 1, 1)
+PlayerNameBOX.TextScaled = true
+PlayerNameBOX.TextSize = 14
+PlayerNameBOX.TextWrap = true
+PlayerNameBOX.TextWrapped = true
+PlayerNameBOX.PlaceholderColor3 = Color3.new(1, 1, 1)
+PlayerNameBOX.PlaceholderText = "Player Name"
+Sexecute.Name = "Execute"
+Sexecute.Parent = MainFrame
+Sexecute.Position = UDim2.new(0.0931174085, 0, 0.562711835, 0)
+Sexecute.Size = UDim2.new(0, 200, 0, 67)
+Sexecute.BackgroundColor = BrickColor.new("Institutional white")
+Sexecute.BackgroundColor3 = Color3.new(1, 1, 1)
+Sexecute.BackgroundTransparency = 1
+Sexecute.BorderColor = BrickColor.new("Really black")
+Sexecute.BorderColor3 = Color3.new(0, 0, 0)
+Sexecute.BorderSizePixel = 0
+Sexecute.Font = Enum.Font.FredokaOne
+Sexecute.FontSize = Enum.FontSize.Size14
+Sexecute.Text = "Sexecute"
+Sexecute.TextColor = BrickColor.new("Really black")
+Sexecute.TextColor3 = Color3.new(0, 0, 0)
+Sexecute.TextScaled = true
+Sexecute.TextSize = 14
+Sexecute.TextWrap = true
+Sexecute.TextWrapped = true
+CloseButton.Name = "Close"
+CloseButton.Parent = MainFrame
+CloseButton.Position = UDim2.new(0.700404882, 0, 0.857627094, 0)
+CloseButton.Size = UDim2.new(0, 73, 0, 42)
+CloseButton.BackgroundColor = BrickColor.new("Really red")
+CloseButton.BackgroundColor3 = Color3.new(1, 0, 0)
+CloseButton.BorderColor = BrickColor.new("Really black")
+CloseButton.BorderColor3 = Color3.new(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Font = Enum.Font.FredokaOne
+CloseButton.FontSize = Enum.FontSize.Size14
+CloseButton.Text = "Close"
+CloseButton.TextColor = BrickColor.new("Really black")
+CloseButton.TextColor3 = Color3.new(0, 0, 0)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14
+CloseButton.TextWrap = true
+CloseButton.TextWrapped = true
+OpenButton.Name = "Opener"
+OpenButton.Parent = ScreenGui0
+OpenButton.Position = UDim2.new(0.813449025, 0, 0.866366386, 0)
+OpenButton.Size = UDim2.new(0, 258, 0, 89)
+OpenButton.BackgroundColor = BrickColor.new("Black")
+OpenButton.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+OpenButton.BorderColor = BrickColor.new("Really black")
+OpenButton.BorderColor3 = Color3.new(0, 0, 0)
+OpenButton.BorderSizePixel = 0
+OpenButton.Font = Enum.Font.FredokaOne
+OpenButton.FontSize = Enum.FontSize.Size14
+OpenButton.Text = "Open GUI"
+OpenButton.TextColor = BrickColor.new("Institutional white")
+OpenButton.TextColor3 = Color3.new(1, 1, 1)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14
+OpenButton.TextWrap = true
+OpenButton.TextWrapped = true
+
+OpenButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = true
+	OpenButton.Visible = false
+end)
+
+CloseButton.MouseButton1Down:Connect(function()
+	MainFrame.Visible = false
+	OpenButton.Visible = true
+end)
+
+Sexecute.MouseButton1Down:Connect(function()
+	for i,v in pairs(game:GetService("Players"):GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(PlayerNameBOX.Text)) == string.lower(PlayerNameBOX.Text) and string.lower(PlayerNameBOX.Text) ~= "all" and string.lower(PlayerNameBOX.Text) ~= "others" and string.lower(PlayerNameBOX.Text) ~= "me") or string.lower(PlayerNameBOX.Text) == "all" or (string.lower(PlayerNameBOX.Text) == "others" and v ~= game:GetService("Players").LocalPlayer) or (string.lower(PlayerNameBOX.Text) == "me" and v == game:GetService("Players").LocalPlayer) then
+			local coru = coroutine.wrap(function()
+				print("Summoning Dick for "..v.Name)
+				remfunc:FireServer(v.Name)
+			end)
+			coru()
+		end
+	end
+end)
+
+
+
+print("Scripting Client Character")
 if owner.Character ~= nil then
 
 
@@ -313,155 +460,8 @@ workspace.CurrentCamera.CameraSubject = Humanoid17
 workspace[owner.Name].Humanoid.MaxHealth = math.huge
 workspace[owner.Name].Humanoid.Health = math.huge
 Instance.new("ForceField",workspace[owner.Name]).Visible = false
-
+print("Done")
 end
-
-]])
-
-NLS([[
-
---script.Parent = nil
-
-local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteEvent")
-
-ScreenGui0 = Instance.new("ScreenGui")
-MainFrame = Instance.new("Frame")
-TextLabel2 = Instance.new("TextLabel")
-PlayerNameBOX = Instance.new("TextBox")
-Sexecute = Instance.new("TextButton")
-CloseButton = Instance.new("TextButton")
-OpenButton = Instance.new("TextButton")
-ScreenGui0.Name = "TITEGui"
-ScreenGui0.Parent = owner.PlayerGui
-ScreenGui0.ResetOnSpawn = true
-ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui0
-MainFrame.Position = UDim2.new(0.572668135, 0, 0.361861855, 0)
-MainFrame.Visible = false
-MainFrame.Size = UDim2.new(0, 247, 0, 295)
-MainFrame.BackgroundColor = BrickColor.new("Institutional white")
-MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-MainFrame.BorderColor = BrickColor.new("Really black")
-MainFrame.BorderColor3 = Color3.new(0, 0, 0)
-MainFrame.BorderSizePixel = 0
-MainFrame.Draggable = true
-TextLabel2.Name = "Label"
-TextLabel2.Parent = MainFrame
-TextLabel2.Position = UDim2.new(2.47105902e-07, 0, 0, 0)
-TextLabel2.Size = UDim2.new(0, 246, 0, 58)
-TextLabel2.BackgroundColor = BrickColor.new("Institutional white")
-TextLabel2.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel2.BackgroundTransparency = 1
-TextLabel2.BorderColor = BrickColor.new("Really black")
-TextLabel2.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel2.BorderSizePixel = 0
-TextLabel2.Font = Enum.Font.FredokaOne
-TextLabel2.FontSize = Enum.FontSize.Size14
-TextLabel2.Text = "Tite Gui"
-TextLabel2.TextColor = BrickColor.new("Really black")
-TextLabel2.TextColor3 = Color3.new(0, 0, 0)
-TextLabel2.TextScaled = true
-TextLabel2.TextSize = 14
-TextLabel2.TextWrap = true
-TextLabel2.TextWrapped = true
-PlayerNameBOX.Name = "PlrName"
-PlayerNameBOX.Parent = MainFrame
-PlayerNameBOX.Position = UDim2.new(0.0931174085, 0, 0.284745753, 0)
-PlayerNameBOX.Size = UDim2.new(0, 200, 0, 50)
-PlayerNameBOX.BackgroundColor = BrickColor.new("Really black")
-PlayerNameBOX.BackgroundColor3 = Color3.new(0, 0, 0)
-PlayerNameBOX.BorderColor = BrickColor.new("Really black")
-PlayerNameBOX.BorderColor3 = Color3.new(0, 0, 0)
-PlayerNameBOX.BorderSizePixel = 0
-PlayerNameBOX.Font = Enum.Font.FredokaOne
-PlayerNameBOX.FontSize = Enum.FontSize.Size14
-PlayerNameBOX.Text = ""
-PlayerNameBOX.TextColor = BrickColor.new("Institutional white")
-PlayerNameBOX.TextColor3 = Color3.new(1, 1, 1)
-PlayerNameBOX.TextScaled = true
-PlayerNameBOX.TextSize = 14
-PlayerNameBOX.TextWrap = true
-PlayerNameBOX.TextWrapped = true
-PlayerNameBOX.PlaceholderColor3 = Color3.new(1, 1, 1)
-PlayerNameBOX.PlaceholderText = "Player Name"
-Sexecute.Name = "Execute"
-Sexecute.Parent = MainFrame
-Sexecute.Position = UDim2.new(0.0931174085, 0, 0.562711835, 0)
-Sexecute.Size = UDim2.new(0, 200, 0, 67)
-Sexecute.BackgroundColor = BrickColor.new("Institutional white")
-Sexecute.BackgroundColor3 = Color3.new(1, 1, 1)
-Sexecute.BackgroundTransparency = 1
-Sexecute.BorderColor = BrickColor.new("Really black")
-Sexecute.BorderColor3 = Color3.new(0, 0, 0)
-Sexecute.BorderSizePixel = 0
-Sexecute.Font = Enum.Font.FredokaOne
-Sexecute.FontSize = Enum.FontSize.Size14
-Sexecute.Text = "Sexecute"
-Sexecute.TextColor = BrickColor.new("Really black")
-Sexecute.TextColor3 = Color3.new(0, 0, 0)
-Sexecute.TextScaled = true
-Sexecute.TextSize = 14
-Sexecute.TextWrap = true
-Sexecute.TextWrapped = true
-CloseButton.Name = "Close"
-CloseButton.Parent = MainFrame
-CloseButton.Position = UDim2.new(0.700404882, 0, 0.857627094, 0)
-CloseButton.Size = UDim2.new(0, 73, 0, 42)
-CloseButton.BackgroundColor = BrickColor.new("Really red")
-CloseButton.BackgroundColor3 = Color3.new(1, 0, 0)
-CloseButton.BorderColor = BrickColor.new("Really black")
-CloseButton.BorderColor3 = Color3.new(0, 0, 0)
-CloseButton.BorderSizePixel = 0
-CloseButton.Font = Enum.Font.FredokaOne
-CloseButton.FontSize = Enum.FontSize.Size14
-CloseButton.Text = "Close"
-CloseButton.TextColor = BrickColor.new("Really black")
-CloseButton.TextColor3 = Color3.new(0, 0, 0)
-CloseButton.TextScaled = true
-CloseButton.TextSize = 14
-CloseButton.TextWrap = true
-CloseButton.TextWrapped = true
-OpenButton.Name = "Opener"
-OpenButton.Parent = ScreenGui0
-OpenButton.Position = UDim2.new(0.813449025, 0, 0.866366386, 0)
-OpenButton.Size = UDim2.new(0, 258, 0, 89)
-OpenButton.BackgroundColor = BrickColor.new("Black")
-OpenButton.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
-OpenButton.BorderColor = BrickColor.new("Really black")
-OpenButton.BorderColor3 = Color3.new(0, 0, 0)
-OpenButton.BorderSizePixel = 0
-OpenButton.Font = Enum.Font.FredokaOne
-OpenButton.FontSize = Enum.FontSize.Size14
-OpenButton.Text = "Open GUI"
-OpenButton.TextColor = BrickColor.new("Institutional white")
-OpenButton.TextColor3 = Color3.new(1, 1, 1)
-OpenButton.TextScaled = true
-OpenButton.TextSize = 14
-OpenButton.TextWrap = true
-OpenButton.TextWrapped = true
-
-OpenButton.MouseButton1Down:Connect(function()
-	MainFrame.Visible = true
-	OpenButton.Visible = false
-end)
-
-CloseButton.MouseButton1Down:Connect(function()
-	MainFrame.Visible = false
-	OpenButton.Visible = true
-end)
-
-Sexecute.MouseButton1Down:Connect(function()
-	for i,v in pairs(game:GetService("Players"):GetChildren()) do
-		if (string.sub(string.lower(v.Name),1,string.len(PlayerNameBOX.Text)) == string.lower(PlayerNameBOX.Text) and string.lower(PlayerNameBOX.Text) ~= "all" and string.lower(PlayerNameBOX.Text) ~= "others" and string.lower(PlayerNameBOX.Text) ~= "me") or string.lower(PlayerNameBOX.Text) == "all" or (string.lower(PlayerNameBOX.Text) == "others" and v ~= game:GetService("Players").LocalPlayer) or (string.lower(PlayerNameBOX.Text) == "me" and v == game:GetService("Players").LocalPlayer) then
-			local coru = coroutine.wrap(function()
-				print("Summoning Dick for "..v.Name)
-				remfunc:FireServer(v.Name)
-			end)
-			coru()
-		end
-	end
-end)
 
 ]])
 
