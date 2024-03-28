@@ -151,7 +151,6 @@ NLS([[
 
 if owner.Character ~= nil then
 fakechar = owner.Character:Clone()
-workspace[owner.Name]:Destroy()
 fakechar.Parent = workspace
 
 owner.Character = fakechar
