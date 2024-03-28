@@ -1,6 +1,6 @@
-RemoteFunc = Instance.new("RemoteFunction",owner.Backpack)
+RemoteFunc = Instance.new("RemoteEvent",owner.Backpack)
 RemoteFunc.Name = "RemFunc"
-RemoteFunc.OnServerInvoke:Connect(function(plr,VictimName)
+RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 	print(plr.Name)
 	local Victim = VictimName
 	
@@ -145,7 +145,7 @@ end)
 
 NLS([[
 
-local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteFunction")
+local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteEvent")
 
 ScreenGui0 = Instance.new("ScreenGui")
 MainFrame = Instance.new("Frame")
