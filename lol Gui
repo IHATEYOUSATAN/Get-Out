@@ -1,6 +1,7 @@
 RemoteFunc = Instance.new("RemoteEvent",owner.Backpack)
 RemoteFunc.Name = "RemFunc"
 RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
+	coroutine.resume(coroutine.create(function()
 	print(plr.Name)
 	local Victim = VictimName
 	
@@ -139,8 +140,19 @@ RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
 			end
 		end
 	end
-	
+	end))
 end)
+
+-- client char
+NLS([[
+
+fakechar = owner.Character:Clone()
+workspace[owner.Name]:Destroy()
+fakechar.Parent = workspace
+
+owner.Character = fakechar
+
+]])
 
 NLS([[
 
