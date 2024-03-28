@@ -145,7 +145,7 @@ end)
 
 NLS([[
 
-local remfunc = owner:FindFirstChildOfClass("RemoteFunction")
+local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteFunction")
 
 ScreenGui0 = Instance.new("ScreenGui")
 MainFrame = Instance.new("Frame")
@@ -290,7 +290,7 @@ end)
 
 --[[
 
-local remfunc = owner:FindFirstChildOfClass("RemoteFunction")
+local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteFunction")
 
 ScreenGui0 = Instance.new("ScreenGui")
 MainFrame = Instance.new("Frame")
