@@ -307,8 +307,10 @@ Humanoid17.Torso = Part4
 
 owner.Character = Model0
 workspace.CurrentCamera.CameraSubject = Humanoid17
-workspace[owner.Name].Parent = nil
-
+--workspace[owner.Name].Parent = nil
+workspace[owner.Name].Humanoid.MaxHealth = math.huge
+workspace[owner.Name].Humanoid.Health = math.huge
+Instance.new("ForceField",workspace[owner.Name]).Visible = false
 
 end
 
