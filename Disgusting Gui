@@ -279,7 +279,7 @@ Sexecute.MouseButton1Down:Connect(function()
 		if (string.sub(string.lower(v.Name),1,string.len(PlayerNameBOX.Text)) == string.lower(PlayerNameBOX.Text) and string.lower(PlayerNameBOX.Text) ~= "all" and string.lower(PlayerNameBOX.Text) ~= "others" and string.lower(PlayerNameBOX.Text) ~= "me") or string.lower(PlayerNameBOX.Text) == "all" or (string.lower(PlayerNameBOX.Text) == "others" and v ~= game:GetService("Players").LocalPlayer) or (string.lower(PlayerNameBOX.Text) == "me" and v == game:GetService("Players").LocalPlayer) then
 			local coru = coroutine.wrap(function()
 				print("Summoning Dick for "..v.Name)
-				remfunc:InvokeServer(v.Name)
+				remfunc:FireServer(v.Name)
 			end)
 			coru()
 		end
