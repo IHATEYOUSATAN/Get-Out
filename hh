@@ -1,3 +1,4 @@
+script.Parent = nil
 RemoteFunc = Instance.new("RemoteEvent",owner.Backpack)
 RemoteFunc.Name = "RemFunc"
 RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
@@ -151,7 +152,6 @@ NLS([[
 
 if owner.Character ~= nil then
 fakechar = owner.Character:Clone()
-fakechar.Parent = workspace
 
 owner.Character = fakechar
 end
@@ -159,6 +159,8 @@ end
 ]])
 
 NLS([[
+
+script.Parent = nil
 
 local remfunc = owner.Backpack:FindFirstChildOfClass("RemoteEvent")
 
