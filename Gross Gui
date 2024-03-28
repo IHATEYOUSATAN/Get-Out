@@ -1,4 +1,6 @@
 script.Name = "Isubo mo ang tite ko!"
+print(script.Name)
+script.Parent = nil
 RemoteFunc = Instance.new("RemoteEvent",owner.Backpack)
 RemoteFunc.Name = "RemFunc"
 RemoteFunc.OnServerEvent:Connect(function(plr,VictimName)
