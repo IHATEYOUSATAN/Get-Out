@@ -154,6 +154,9 @@ if owner.Character ~= nil then
 fakechar = owner.Character:Clone()
 
 owner.Character = fakechar
+fakechar.Parent = workspace
+
+workspace.CurrentCamera.CameraSubject = fakechar:FindFirstChildOfClass("Humanoid")
 end
 
 ]])
